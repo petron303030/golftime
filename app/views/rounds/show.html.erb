@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Player:</strong>
+  <%= @round.player %>
+</p>
+
+<p>
+  <strong>Numholes:</strong>
+  <%= @round.numholes %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @round.score %>
+</p>
+
+<%= link_to 'Edit', edit_round_path(@round), class: "btn btn-link" %> |
+<%= link_to 'Back', rounds_path, class: "btn btn-link" %>
